@@ -36,7 +36,7 @@ if (VERIFY) {
   const health = await sbx.commands.run('/home/user/bin/health-check.sh')
   const res = await fetch(previewUrl)
   const body = await res.text()
-  console.log('preview fetch:', previewUrl, '->', res.status, '| title ok:', body.includes('Next.js'))
+  console.log('preview fetch:', previewUrl, '->', res.status, '| page ok:', body.includes('Home'))
   console.log('in-sandbox health:', health.stdout.trim())
   const restart = await sbx.commands.run('/home/user/bin/dev-server.sh restart')
   console.log('restart:', restart.stdout.trim().replace(/\n/g, ' | '))
