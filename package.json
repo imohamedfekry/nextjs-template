@@ -1,0 +1,13 @@
+{
+  "name": "nextjs-template",
+  "private": true,
+  "description": "E2B template workspace for Next.js (starter in app/)",
+  "type": "module",
+  "scripts": {
+    "preview": "node try-preview.mjs",
+    "preview:verify": "node try-preview.mjs --verify"
+  },
+  "dependencies": {
+    "e2b": "^2.59.0"
+  }
+}

@@ -1,0 +1,12 @@
+# Excluded from template build context (both .e2bignore and local test builds)
+**/node_modules
+**/.git
+**/.next
+**/out
+**/build
+**/dist
+**/.vscode
+**/.env
+**/.env.*
+**/*.local
+*.log

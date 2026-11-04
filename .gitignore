@@ -1,0 +1,25 @@
+# dependencies / build artifacts
+**/node_modules
+**/.next
+**/out
+**/build
+**/dist
+
+# sandboxes / logs
+**/.dev-server.pid
+**/.dev-server.log
+*.log
+
+# secrets — NEVER commit
+**/.env
+**/.env.*
+!**/.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+**/.vscode/
+
+# local agent skills
+.agents/
+skills-lock.json

@@ -1,0 +1,9 @@
+# Force LF on all text files: shell scripts must be LF to run inside the
+# Linux template image, even when cloned on Windows.
+* text=auto eol=lf
+
+# Binary assets (none currently, keep for safety)
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff binary

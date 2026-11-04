@@ -1,0 +1,12 @@
+# E2B template config.
+#
+# CLI v2.22+ no longer reads e2b.toml for builds: `e2b template create`
+# reads e2b.Dockerfile directly and takes start/ready commands as flags.
+# This file remains useful as the migration source for `e2b template migrate`
+# and for older CLIs that still support `e2b template build`.
+template_id = "nextjs-template"
+dockerfile = "e2b.Dockerfile"
+cpu_count = 2
+memory_mb = 2048
+start_cmd = "/home/user/bin/dev-server.sh start"
+ready_cmd = "/home/user/bin/health-check.sh"
