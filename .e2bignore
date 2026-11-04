@@ -10,3 +10,7 @@
 **/.env.*
 **/*.local
 *.log
+
+# local agent skills
+**/.agents
+skills-lock.json
